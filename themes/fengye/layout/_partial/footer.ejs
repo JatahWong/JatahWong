@@ -1,0 +1,39 @@
+<footer class="flex flex-col mt-18 mb-12 items-center
+  text-[var(--c-50)] text-sm">
+  <div class="flex flex-row items-center my-12">
+    <%- partial('_partial/social-list') %>
+  </div>
+  <div class="flex flex-wrap items-center justify-center gap-4 my-6 font-bold text-lg">
+    <div class="flex flex-row items-center gap-1">
+      <iconify-icon width="24" icon="mingcute:building-1-fill"></iconify-icon>
+      <p><%= theme.my_location %></p>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="flex flex-row items-center gap-2">
+    <span>
+      Copyright
+    </span>
+    <span>© <%- new Date().getFullYear() %></span>
+    <a class="hover:underline"
+    href="mailto:JatahWong@gmail.com" 
+    target="_blank" 
+    rel="noopener noreferrer">Jatah Wong | 黄伦</a>
+  </div>
+  <div style="flex: 1;"></div>
+  <!-- powered by -->
+  <div class="flex items-center gap-1">
+    <span>Powered by</span>
+    <a class="hover:underline" 
+    href="https://hexo.io/" target="_blank" rel="noopener noreferrer">Hexo</a>
+    <span>&</span>
+    <a href="https://github.com/chen-yingfa/hexo-theme-fengye" 
+    class="hover:underline"
+    target="_blank"
+      rel="noopener noreferrer"
+      >
+      Fengye
+    </a>
+  </div>
+
+</footer>
